@@ -1,0 +1,13 @@
+---
+- name: Install normal tools
+  apt: 
+    name: nano,htop,iftop,iotop,rsync,git,tmux,screen
+    state: present
+
+- git:
+    repo: https://github.com/szazo/DHT11_Python.git
+    dest: /home/pi/DHT11 
+    
+- git:
+    repo: https://github.com/xreef/DHT12_sensor_library.git
+    dest: /home/pi/DHT12 
